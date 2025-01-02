@@ -5,7 +5,7 @@ const Contact = () => {
     <div>
         <h1>Contact</h1>
         <p>Feel free to Contact us!!</p>
-        <p>9566750028</p>
+        <p>956675002</p>
         </div>
   )
 }
