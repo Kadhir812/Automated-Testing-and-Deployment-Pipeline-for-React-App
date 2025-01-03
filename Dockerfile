@@ -18,3 +18,5 @@ EXPOSE 5173
 
 # Run Vite in development mode with hot-reloading
 CMD ["npm", "run", "dev"]
+
+
