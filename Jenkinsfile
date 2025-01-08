@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'docker-agent' } // Ensure this agent has Docker installed
+    agent any // Ensure this agent has Docker installed
 
     environment {
         DOCKER_IMAGE = "react-route" // Docker image name
@@ -9,7 +9,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Tron123ops/react-routes.git' // Replace with your repo URL
+                // Checkout the repository defined in the Jenkins job configuration
+                checkout scm
             }
         }
 
