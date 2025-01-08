@@ -12,8 +12,6 @@ This project demonstrates how to set up a CI/CD pipeline for a React app using J
 - `Jenkinsfile`: Defines the Jenkins pipeline (optional, as requested, we will focus on Docker slave configuration).
 - React app code: Basic React app with a build and run process.
 
----
-Here is the **README** section for the **Docker Slave Configuration** based on your request:
 
 ---
 
