@@ -33,7 +33,7 @@ pipeline {
 
                     // Run the app in development mode with hot-reloading
                     sh """
-                    docker run -it -d -p 5173:5173 -v /app -v /app/node_modules --name $DOCKER_CONTAINER $DOCKER_IMAGE
+                    docker run -it -d -p 5173:5173 --name $DOCKER_CONTAINER $DOCKER_IMAGE
 
                     """
                 }
