@@ -9,8 +9,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                // Checkout the repository defined in the Jenkins job configuration
-                checkout scm
+                git 'https://github.com/Tron123ops/react-routes.git' // Replace with your repo URL
             }
         }
 
