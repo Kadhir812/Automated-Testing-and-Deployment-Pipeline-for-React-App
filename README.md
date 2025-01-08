@@ -15,6 +15,23 @@ This project demonstrates how to set up a CI/CD pipeline for a React app using J
 
 ---
 
+## **Pre-requisites**
+
+1. **AWS EC2 Ubuntu Instance**:
+   - A running EC2 instance with **Docker** and **Jenkins** installed.
+   - Ports opened for SSH (22), HTTP (80), and Jenkins (8080).
+
+2. **GitHub Repository**:
+   - The code repository where your React app is stored.
+
+3. **Docker**:
+   - Docker should be installed on both Jenkins (as the agent) and EC2 instances for building and running the containers.
+
+4. **Jenkins**:
+   - Jenkins installed on EC2 instance, used for orchestrating the CI/CD pipeline.
+  
+   ----
+
 # **Docker Slave Configuration for Jenkins on EC2 (Ubuntu)**
 
 This section provides the steps to configure a Docker slave on an **EC2 Ubuntu instance** for Jenkins to run Docker-based builds.
@@ -57,28 +74,6 @@ This section provides the steps to configure a Docker slave on an **EC2 Ubuntu i
    ```
 
 ---
-
-After following these steps, the **Docker slave configuration** will be complete, and Jenkins will be able to utilize Docker for building and deploying projects.
-
---- 
-
-Feel free to integrate this into your project README. Let me know if you need further adjustments!
-
-## **Pre-requisites**
-
-1. **AWS EC2 Ubuntu Instance**:
-   - A running EC2 instance with **Docker** and **Jenkins** installed.
-   - Ports opened for SSH (22), HTTP (80), and Jenkins (8080).
-
-2. **GitHub Repository**:
-   - The code repository where your React app is stored.
-
-3. **Docker**:
-   - Docker should be installed on both Jenkins (as the agent) and EC2 instances for building and running the containers.
-
-4. **Jenkins**:
-   - Jenkins installed on EC2 instance, used for orchestrating the CI/CD pipeline.
-
 
 
 ## **Conclusion**
