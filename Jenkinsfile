@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Tron123ops/react-routes.git' // Replace with your repo URL
+                git 'https://github.com/Kadhir812/Automated-Testing-and-Deployment-Pipeline-for-React-App.git' // Replace with your repo URL
             }
         }
 
