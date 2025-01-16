@@ -1,22 +1,20 @@
-# Use Node.js image
+# Use the official Node.js LTS image
 FROM node:20.11.0
 
-# Set working directory
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json
+# Copy only package.json and package-lock.json first to leverage Docker layer caching
 COPY package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy the source code
+# Copy the rest of the application files
 COPY . .
 
-# Expose port for Vite dev server
+# Expose the port used by Vite dev server
 EXPOSE 5173
 
-# Run Vite in development mode with hot-reloading
+# Set the default command to run the development server
 CMD ["npm", "run", "dev"]
-
-
